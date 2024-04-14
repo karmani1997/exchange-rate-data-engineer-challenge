@@ -5,3 +5,4 @@ temp/
 *checkpoint.ipynb
 #config.py
 *.csv#
+notebook/
