@@ -1,6 +1,8 @@
 # Data Pipeline for Exchange Rate Processing
 
-This repository contains the code for a `data pipeline` designed to process exchange rate data and details `Data Architecture and Pipeline Design`. The pipeline comprises several stages, including data extraction, transformation, and loading into a BigQuery table. Additionally, a schema for the BigQuery table is provided to maintain data integrity and optimize querying, data pipeline design and  explaination of the architecture.
+- This repository contains the code for a `data pipeline` designed to process exchange rate data and details `Data Architecture and Pipeline Design`. 
+- The pipeline comprises several stages, including data extraction, transformation, and loading into a BigQuery table and a schema definition for the BigQuery table. 
+- Additionally data pipeline design and  explaination of the flow.
 
 ## Task 1
 Please refer [Task 1 README](https://github.com/karmani1997/exchange-rate-data-engineer-challenge/tree/main/pipeline) for details as to how to run the pipeline locally.
