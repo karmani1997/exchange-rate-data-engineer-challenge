@@ -3,4 +3,5 @@ myvenv/
 temp/
 *.pyc
 *checkpoint.ipynb
-#config.py
+config.py
+model.py
