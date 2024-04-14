@@ -17,11 +17,16 @@ Please refer [Task 2 README](https://github.com/karmani1997/exchange-rate-data-e
 - Implement data validation checks to identify missing values, invalid formats, or outliers.
 - You can raise errors or log warnings for further investigation.
 
+
 #### Data Partitioning:
 
 - For better performance and manageability, consider partitioning the BigQuery table by date.
 - This allows efficient querying for specific date ranges.
 - You can configure table partitioning during table creation or implement logic to partition data after loading.
+
+#### Testing
+- Add more relevant unit as well as integration.
+
 ### Task 2
 #### Error handling: 
 - Implement mechanisms to handle potential errors during each stage (e.g., API failures, transformation errors, loading issues).
