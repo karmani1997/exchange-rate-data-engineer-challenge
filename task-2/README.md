@@ -6,8 +6,9 @@
 ## Explanation for the stages
 
 ## Overview:
-- This pipeline design follows an ETL (Extract, Load, Transform) approach, where data is first extracted, transformed and then loaded.
-- Scheduling the data extraction ensures daily updates in BigQuery.
+- This pipeline design follows an ETL (Extract, Transform, Load) approach, where data is first extracted, transformed, and then loaded.
+- Scheduling the data extraction ensures daily dumping of data into the data lake.
+- After successful extraction, it will trigger the transformation and then load it into the data warehouse.
 
 ### The data pipeline will consist of the following stages:
 
@@ -29,3 +30,6 @@
 - The transformed and validated data is loaded into the BigQuery table defined in `model.py`.
 - The `loader.py` module can handle this stage using BigQuery's load functionality.
 
+### Reporting:
+
+- This stage involves querying the data warehouse to extract relevant information and presenting it in a comprehensible format, such as charts, graphs, or textual reports.
