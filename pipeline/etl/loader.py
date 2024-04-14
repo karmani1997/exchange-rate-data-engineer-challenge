@@ -5,8 +5,7 @@ def store_data_in_bigquery(data, table_id):
   """Loads the transformed data into BigQuery."""
 
   client = bigquery.Client()
-  job_config = bigquery.LoadJobConfig(schema = model.currencyrates_table_schema())
-
+  job_config = bigquery.LoadJobConfig(schema = model.currency_rates_table_schema())
   job = client.load_table_from_dataframe(data, table_id, job_config=job_config)
   
   job.result()
