@@ -4,3 +4,4 @@ temp/
 *.pyc
 *checkpoint.ipynb
 config.py
+*.csv#
