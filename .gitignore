@@ -4,4 +4,3 @@ temp/
 *.pyc
 *checkpoint.ipynb
 config.py
-model.py
