@@ -12,10 +12,19 @@ This ETL pipeline automates the extraction, transformation, and loading (ETL) pr
 
 ### Usage
 
-1. Make sure you have Google Service Account credentials stored in a JSON file placed in the etl folder, and that you have installed the required libraries specified in `requirements.txt`.
-2. Modify `etl/config.py` to specify the API key, base currency, target currencies, Project_ID, Dataset_ID, Table_id and date range for the exchange rate data you want to extract.
-3. Run `etl/main.py` to execute the data processing pipeline.
+1. Make sure you have Google Service Account credentials stored in a JSON file placed in the etl folder.
+2. Install the required libraries specified in `requirements.txt` using the following command.
+    ```
+    pip3 install -r requirements.txt 
+    ``` 
+3. Modify `etl/config.py` to specify the API key, base currency, target currencies, Project_ID, Dataset_ID, Table_id and date range for the exchange rate data you want to extract.
+4. Run `etl/main.py` to execute the data processing pipeline.
 
+### Run the test cases
+* To Run the unit test cases
+    ```
+    python -m unittest discover tests/
+    ```
 ## Table Definition
 Table(currency_rates) Definition for BigQuery:
 

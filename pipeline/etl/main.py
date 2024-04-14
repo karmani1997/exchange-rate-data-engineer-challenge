@@ -1,6 +1,6 @@
 import os
 import extractor
-import transformer as transformer
+import transformer
 import loader
 # Load configuration from config.py
 from config import API_KEY, TABLE_ID, BASE_CURRENCY, TARGET_CURRENCIES, START_DATE, END_DATE, CREDENTIALS_PATH
