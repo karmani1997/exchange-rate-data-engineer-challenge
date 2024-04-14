@@ -1,0 +1,6 @@
+river-daylight-420211-523e5d1f8610.json
+myvenv/
+temp/
+*.pyc
+*checkpoint.ipynb
+#config.py
