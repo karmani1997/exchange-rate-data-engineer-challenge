@@ -8,18 +8,18 @@ Please refer [Task 1 README](https://github.com/karmani1997/exchange-rate-data-e
 ## Task 2
 Please refer [Task 2 README](https://github.com/karmani1997/exchange-rate-data-engineer-challenge/tree/main/task-2) for details Data Architecture and Pipeline Design.
 
-## Improvements
-
-### Data Validation:
+## Improvements in Task 1 and Task 2
+#### Task 1
+#### Data Validation:
 - It's crucial to ensure data quality before loading.
 - Implement data validation checks to identify missing values, invalid formats, or outliers.
 - You can raise errors or log warnings for further investigation.
 
-### Data Partitioning:
+#### Data Partitioning:
 
 - For better performance and manageability, consider partitioning the BigQuery table by date.
 - This allows efficient querying for specific date ranges.
 - You can configure table partitioning during table creation or implement logic to partition data after loading.
-
-### Error handling: 
+### Task 2
+#### Error handling: 
 - Implement mechanisms to handle potential errors during each stage (e.g., API failures, transformation errors, loading issues).
