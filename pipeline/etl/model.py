@@ -7,6 +7,6 @@ def currency_rates_table_schema():
         bigquery.SchemaField("timestamp", "TIMESTAMP", mode="REQUIRED", description="Timestamp of the rate entry"),
         bigquery.SchemaField("base_currency", "STRING", mode="REQUIRED", description="The base currency code"),
         bigquery.SchemaField("date", "STRING", mode="REQUIRED", description="The date of the rates"),
-        bigquery.SchemaField("currency_code", "STRING", mode="REQUIRED", description="The code of the currency (e.g., USD, GBP, CHF)"),
+        bigquery.SchemaField("target_currency_code", "STRING", mode="REQUIRED", description="The code of the currency (e.g., USD, GBP, CHF)"),
         bigquery.SchemaField("exchange_rate", "FLOAT", mode="REQUIRED", description="The exchange rate for the respective currency on the given date"),
     ]

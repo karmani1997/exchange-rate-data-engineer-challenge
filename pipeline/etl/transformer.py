@@ -14,7 +14,7 @@ def unpivot_data(row):
   for currency_code, exchange_rate in rates.items():
     rows.append([success, timestamp, historical, base_currency, date, currency_code, exchange_rate])
 
-  return pd.DataFrame(rows, columns=['success', 'timestamp', 'historical', 'base_currency', 'date', 'currency_code', 'exchange_rate'])
+  return pd.DataFrame(rows, columns=['success', 'timestamp', 'historical', 'base_currency', 'date', 'target_currency_code', 'exchange_rate'])
 
 def transform_data(exchange_rates):
   """Applies unpivoting transformation to the list of exchange rate data."""
