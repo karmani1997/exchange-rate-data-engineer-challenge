@@ -32,7 +32,7 @@ Table(currency_rates) Definition for BigQuery:
 |----------------|-----------|-----------|--------------------------------------------------------------------------------|
 | rate_id        | INTEGER   | REQUIRED  | Unique identifier for each rate entry.                                         |
 | timestamp      | TIMESTAMP | REQUIRED  | Timestamp when the provided exchange rate information was collected.                                                    |
-| base           | STRING    | REQUIRED  | The base currency code.                                                              |
+| base_currency           | STRING    | REQUIRED  | The base currency code.                                                              |
 | date           | STRING    | REQUIRED  | The date when the given exchange rate information was collected.                                                          |
 | target_currency_code  | STRING    | REQUIRED  | The code of the target currency code (e.g., USD, GBP, CHF).                                |
 | exchange_rate  | FLOAT     | REQUIRED  | The exchange rate for the respective currency on the given date.               |
