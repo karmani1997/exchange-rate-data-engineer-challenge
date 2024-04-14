@@ -1,37 +1,14 @@
 # Task 1
-## Exchange Rate Data Processing
+## Overview
+This ETL pipeline automates the extraction, transformation, and loading (ETL) process of last 3 month exchange rate data into a Data Warehouse (DWH). The pipeline is implemented using Python.
 
-This project is aimed at extracting exchange rate data from an external API, transforming it into a suitable format, and loading it into a BigQuery table.
+## Folder Structure
 
-### Modules
+- **extractor.py:** This module contains the functionality to extract exchange rate data from an external API using the provided API key, base currency, target currencies, start date, and end date.
+- **transformer.py:** This module contains the functionality to transform the raw exchange rate data into a format suitable for loading into a BigQuery table.
+- **loader.py:** This module contains the functionality to load the transformed exchange rate data into a BigQuery table.
+- **model.py:** This module contains the schema definition for the BigQuery table.
 
-#### extractor.py
-
-This module contains the functionality to extract exchange rate data from an external API using the provided API key, base currency, target currencies, start date, and end date.
-
-##### Function:
-- `fetch_exchange_rates(API_KEY, base_currency, target_currencies, start_date, end_date)`: Fetches exchange rate data from the API for the specified parameters.
-
-#### transformer.py
-
-This module contains the functionality to transform the raw exchange rate data into a format suitable for loading into a BigQuery table.
-
-##### Function:
-- `unpivot_data(row)`: Transforms the raw exchange rate data into a DataFrame with columns: success, timestamp, historical, base, date, currency_code, exchange_rate.
-
-#### loader.py
-
-This module contains the functionality to load the transformed exchange rate data into a BigQuery table.
-
-##### Function:
-- `store_data_in_bigquery(data)`: Loads the transformed exchange rate data into the specified BigQuery table.
-
-#### model.py
-
-This module contains the schema definition for the BigQuery table.
-
-##### Function:
-- `get_table_schema()`: Returns the schema for the BigQuery table.
 
 ### Usage
 
